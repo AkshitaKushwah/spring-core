@@ -10,15 +10,14 @@ public class App
 {
     public static void main( String[] args )
     {
-
-		/*
+    	/*
 		 * Address address = new Address(22322, "Mumbai", "Maha");
 		 * 
 		 * Student student= new Student(1,"Rani",11,address);
 		 * 
 		 * System.out.println(student);
 		 */
-		
+	
     	
 		  ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
 		  
