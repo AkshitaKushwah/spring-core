@@ -1,0 +1,67 @@
+package com.zensar.spring.beans;
+
+import java.util.List;
+import java.util.Set;
+
+public class Student {
+
+	private int rollNumber;
+	private String studentName;
+	private int studentMarks;
+	
+	private Set<Address> address;
+	
+	
+	
+	/*
+	 * public List<Address> getAddress() { return address; }
+	 * 
+	 * public void setAddress(List<Address> address) { this.address = address; }
+	 */
+
+	public Set<Address> getAddress() {
+		return address;
+	}
+
+	public void setAddress(Set<Address> address) {
+		this.address = address;
+	}
+
+	public Student() {
+		super();
+		System.out.println("Inside Student const..");
+	
+	}
+	
+	public Student(int rollNumber, String studentName, int studentMarks) {
+		super();
+		this.rollNumber = rollNumber;
+		this.studentName = studentName;
+		this.studentMarks = studentMarks;
+	}
+	public int getRollNumber() {
+		return rollNumber;
+	}
+	public void setRollNumber(int rollNumber) {
+		this.rollNumber = rollNumber;
+	}
+	public String getStudentName() {
+		return studentName;
+	}
+	public void setStudentName(String studentName) {
+		this.studentName = studentName;
+	}
+	public int getStudentMarks() {
+		return studentMarks;
+	}
+	public void setStudentMarks(int studentMarks) {
+		this.studentMarks = studentMarks;
+	}
+
+	@Override
+	public String toString() {
+		return "Student [rollNumber=" + rollNumber + ", studentName=" + studentName + ", studentMarks=" + studentMarks
+				+ ", address=" + address + "]";
+	}
+	
+}

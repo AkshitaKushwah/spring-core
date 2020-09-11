@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename Java project &apos;spring-setter-injection&apos; to &apos;spring-setter-injection-premitives&apos;&#x0D;&#x0A;- Original element: &apos;spring-setter-injection&apos;&#x0D;&#x0A;- Renamed element: &apos;spring-setter-injection&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename Java project &apos;spring-setter-injection&apos;" flags="7" id="org.eclipse.jdt.ui.rename.java.project" input="=spring-setter-injection" name="spring-setter-injection-premitives" references="true" stamp="1599722521110" version="1.0"/>
+</session>

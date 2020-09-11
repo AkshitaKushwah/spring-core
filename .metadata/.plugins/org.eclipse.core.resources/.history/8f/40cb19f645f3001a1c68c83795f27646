@@ -1,0 +1,37 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+
+<beans xmlns = "http://www.springframework.org/schema/beans"
+   xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+	<bean id="student" class="com.zensar.spring.beans.Student">
+		<property name="rollNumber" value="10"/><!-- Corresponding setter method would be called known as setterInjection -->
+		<property name="studentName">
+			<value>Rama</value>
+		</property>
+		<property name="studentMarks">
+			<value>78</value>
+		</property>
+		<property name="address">
+			<set>
+				<ref bean="addr1"/>
+				<ref bean="addr1"/>
+			</set>
+		</property>
+		
+	</bean>
+
+	<bean id="addr1" class="com.zensar.spring.beans.Address">
+		<property name="pinCode" value="452001"></property>
+		<property name="city" value="Ratlam"></property>
+		<property name="state" value="MP"></property>
+	</bean>
+	
+	<bean id="addr2" class="com.zensar.spring.beans.Address">
+		<property name="pinCode" value="411011"></property>
+		<property name="city" value="Pune"></property>
+		<property name="state" value="Maha"></property>
+	</bean>
+   
+</beans>

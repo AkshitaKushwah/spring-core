@@ -1,0 +1,108 @@
+package com.zensar.spring.beans;
+
+import java.util.Arrays;
+import java.util.List;
+import java.util.Map;
+import java.util.Properties;
+import java.util.Set;
+
+public class Student {
+
+	private int rollNumber;
+	private List<String> studentName;
+	private int studentMarks;
+	
+	private Set<Address> address;
+	
+	//private Map<String,Certification> certification;
+	
+	private Properties certification;
+	
+	private String[] hobbies;
+	
+	/*
+	 * public List<Address> getAddress() { return address; }
+	 * 
+	 * public void setAddress(List<Address> address) { this.address = address; }
+	 */
+
+	
+	  public String[] getHobbies() {
+		return hobbies;
+	}
+
+
+
+	public void setHobbies(String[] hobbies) {
+		this.hobbies = hobbies;
+	}
+
+
+
+	public Set<Address> getAddress() 
+	  {
+		  return address; 
+		  
+	  }
+	  
+	
+
+	public void setAddress(Set<Address> address) 
+	  {
+		  this.address = address;
+	} 
+	
+	/*
+	 * public Map<String, Certification> getCertification() { return certification;
+	 * }
+	 * 
+	 * public void setCertification(Map<String, Certification> certification) {
+	 * this.certification = certification; }
+	 */
+
+	public Student() {
+		super();
+		System.out.println("Inside Student const..");
+	
+	}
+	
+	public Properties getCertification() {
+		return certification;
+	}
+
+	public void setCertification(Properties certification) {
+		this.certification = certification;
+	}
+
+	public Student(int rollNumber, List<String> studentName, int studentMarks) {
+		super();
+		this.rollNumber = rollNumber;
+		this.studentName = studentName;
+		this.studentMarks = studentMarks;
+	}
+	public int getRollNumber() {
+		return rollNumber;
+	}
+	public void setRollNumber(int rollNumber) {
+		this.rollNumber = rollNumber;
+	}
+	public List<String> getStudentName() {
+		return studentName;
+	}
+	public void setStudentName(List<String> studentName) {
+		this.studentName = studentName;
+	}
+	public int getStudentMarks() {
+		return studentMarks;
+	}
+	public void setStudentMarks(int studentMarks) {
+		this.studentMarks = studentMarks;
+	}
+
+	@Override
+	public String toString() {
+		return "Student [rollNumber=" + rollNumber + ", studentName=" + studentName + ", studentMarks=" + studentMarks
+				+ ", address=" + address + ", certification=" + certification + ", hobbies=" + hobbies + "]";
+	}
+
+}

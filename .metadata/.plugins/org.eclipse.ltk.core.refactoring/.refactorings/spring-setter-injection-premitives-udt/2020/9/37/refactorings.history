@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;Address.java&apos; to &apos;spring-inner-beans/src/main/java/com.zensar.spring.beans&apos;&#x0D;&#x0A;- Original project: &apos;spring-setter-injection-premitives-udt&apos;&#x0D;&#x0A;- Destination element: &apos;spring-inner-beans/src/main/java/com.zensar.spring.beans&apos;&#x0D;&#x0A;- Original element: &apos;com.zensar.spring.beans.Address.java&apos;" description="Copy compilation unit" destination="=spring-inner-beans/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.zensar.spring.beans" element1="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.zensar.spring.beans{Address.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1599799004549" units="1" version="1.0"/>
+</session>
